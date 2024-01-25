@@ -8,11 +8,11 @@ const createLayoutComponents = () => {
 		sectionHeadEl.className = 'section__head';
 
 		const sectionHeadTitleEl = document.createElement('h2');
-		sectionHeadTitleEl.className = 'section__title';
+		sectionHeadTitleEl.className = 'cards-summary__title';
 		sectionHeadTitleEl.textContent = 'Reliable, efficient delivery';
 
 		const sectionHeadSubtitleEl = document.createElement('p');
-		sectionHeadSubtitleEl.className = 'section__subtitle';
+		sectionHeadSubtitleEl.className = 'cards-summary__subtitle';
 
 		const sectionHeadSubtitleTextEl = document.createElement('strong');
 		sectionHeadSubtitleTextEl.textContent = 'Powered by Technology';
@@ -20,7 +20,7 @@ const createLayoutComponents = () => {
 		sectionHeadSubtitleEl.appendChild(sectionHeadSubtitleTextEl);
 
 		const sectionHeadDescriptionEl = document.createElement('p');
-		sectionHeadDescriptionEl.className = 'section__desc';
+		sectionHeadDescriptionEl.className = 'cards-summary__desc';
 		sectionHeadDescriptionEl.textContent =
 			'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful';
 
@@ -33,7 +33,7 @@ const createLayoutComponents = () => {
 		sectionBodyEl.className = 'section__body';
 
 		const cardListEl = document.createElement('div');
-		cardListEl.className = 'card__list';
+		cardListEl.className = 'cards';
 
 		const cardBlocks = [
 			{
@@ -80,11 +80,11 @@ const createLayoutComponents = () => {
 
 		for (const cardBlock of cardBlocks) {
 			const cardBlockEl = document.createElement('div');
-			cardBlockEl.className = 'card__list-block';
+			cardBlockEl.className = 'cards__block';
 
 			for (const item of cardBlock.items) {
 				const cardItemEl = document.createElement('div');
-				cardItemEl.className = `card__list-item card__list-item--${item.id}`;
+				cardItemEl.className = `card card--${item.id}`;
 
 				const cardItemTitleEl = document.createElement('h3');
 				cardItemTitleEl.className = 'card__title';
