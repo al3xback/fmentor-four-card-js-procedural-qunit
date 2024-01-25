@@ -19,14 +19,14 @@ const createLayoutComponents = () => {
 
 		cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
 
-		const cardsSummaryDescriptionEl = document.createElement('p');
-		cardsSummaryDescriptionEl.className = 'cards-summary__desc';
-		cardsSummaryDescriptionEl.textContent =
+		const cardsSummaryDescEl = document.createElement('p');
+		cardsSummaryDescEl.className = 'cards-summary__desc';
+		cardsSummaryDescEl.textContent =
 			'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful';
 
 		sectionHeadEl.appendChild(cardsSummaryTitleEl);
 		sectionHeadEl.appendChild(cardsSummarySubtitleEl);
-		sectionHeadEl.appendChild(cardsSummaryDescriptionEl);
+		sectionHeadEl.appendChild(cardsSummaryDescEl);
 
 		/* section body */
 		const sectionBodyEl = document.createElement('div');
